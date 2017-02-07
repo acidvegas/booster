@@ -33,9 +33,9 @@ class Booster(object):
 
     def run(self):
         self.login()
-        threading.Thread(target=self.boost_loop).start()
-        threading.Thread(target=self.follow_loop).start()
-        threading.Thread(target=self.search_loop).start()
+        threading.Thread(target=self.loop_boost).start()
+        threading.Thread(target=self.loop_follow).start()
+        threading.Thread(target=self.loop_search).start()
 
     def login(self):
         try:
