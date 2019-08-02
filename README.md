@@ -1,8 +1,8 @@
-###### Requirments
-* [Tweepy](http://pypi.python.org/pypi/tweepy)
+## Requirments
+- [Tweepy](http://pypi.python.org/pypi/tweepy)
 
-###### Instructions
-Register a Twitter account, and [sign up](http://dev.twitter.com/apps/new) for a new developer application.
+## Instructions
+Create a Twitter account & [sign up](http://dev.twitter.com/apps/new) for a new developer application.
 
 Go to your new application settings "Keys and Access Tokens" tab.
 
@@ -16,7 +16,7 @@ Change your access to "Read, Write and Access direct messages".
 
 Edit your `config.py` and change the Twitter API settings.
 
-###### Mirrors
+## Mirrors
 - [acid.vegas](https://acid.vegas/booster) *(main)*
 - [SuperNETs](https://git.supernets.org/acidvegas/booster)
 - [GitHub](https://github.com/acidvegas/booster)

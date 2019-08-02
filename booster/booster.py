@@ -10,9 +10,9 @@ import debug
 
 debug.info()
 if not debug.check_version(3):
-    debug.error_exit('Requires Python version 3 to run!')
+	debug.error_exit('Requires Python version 3 to run!')
 if debug.check_privileges():
-    debug.error_exit('Do not run as admin/root!')
+	debug.error_exit('Do not run as admin/root!')
 debug.check_imports()
 debug.check_config()
 import twitter
