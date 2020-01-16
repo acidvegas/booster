@@ -27,15 +27,15 @@ def check_imports():
 
 def check_privileges():
 	if check_windows():
-		return True if ctypes.windll.shell32.IsUserAnAdmin() != 0 else return False
+		return True if ctypes.windll.shell32.IsUserAnAdmin() != 0 else False
 	else:
-		return True if os.getuid() == 0 or os.geteuid() == 0 else return False
+		return True if os.getuid() == 0 or os.geteuid() == 0 else False
 
 def check_version(major):
-	return True if sys.version_info.major == major else return False
+	return True if sys.version_info.major == major else False
 
 def check_windows():
-	return True if os.name == 'nt' else return False
+	return True if os.name == 'nt' else False
 
 def clear():
 	os.system('cls') if check_windows() else os.system('clear')

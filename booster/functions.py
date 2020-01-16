@@ -15,7 +15,9 @@ def get_source(url):
 	source = urllib.request.urlopen(req, timeout=10)
 	charset = source.headers.get_content_charset()
 	if charset:
-	return source.read().decode(charset) if charset else return source.read().decode()
+		return source.read().decode(charset)
+	else:
+		return source.read().decode()
 
 def random_int(min, max):
 	return random.randint(min, max)
