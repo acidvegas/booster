@@ -145,5 +145,6 @@ try:
 	import tweepy
 except ImportError:
 	raise SystemExit('Failed to import the Tweepy library! (http://pypi.python.org/pypi/tweepy)')
-Booster.run()
+BOOSTER = Booster()
+BOOSTER.run()
 while True:input('')
